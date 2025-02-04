@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Page</title>
+    <link rel="stylesheet" href="debate-platform.css">
+</head>
+<body>
+    <section class="debate-page">
+        <h2>Challenge Ideas, Challenge Perspectives Join Now!</h2>
+        <div class="debate-options">
+            <div class="option">
+                <h3>Online Chat</h3><br>
+                <p>Join People</p>
+                <button class="join" onclick="goToOnlineChatPage()">Join</button>
+            </div>
+            <div class="option">
+                <h3>Video Call</h3><br>
+                <p>Join People</p>
+                <button class="join" onclick="goToVideoCallPage()">Join</button>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function goToOnlineChatPage() {
+            window.location.href = 'onlinechatpage.html';
+        }
+
+        function goToVideoCallPage() {
+            window.location.href = 'videocallpage.html';
+        }
+    </script>                                                      
+</body>
+</html>

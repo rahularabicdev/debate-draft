@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Call Room</title>
+    <link rel="stylesheet" href="videocallpage.css">
+</head>
+
+<body>
+    <div class="video-container">
+        <h2>Video Call Room</h2>
+        <div class="video-section">
+            <video id="local-video" autoplay muted></video>
+        </div>
+
+        <div class="controls">
+            <button id="mute-btn">Mute</button>
+            <button id="video-btn">Stop Video</button>
+            <button id="screen-share-btn">Share Screen</button>
+            <button id="blur-btn">Blur Background</button>
+            <button id="virtual-bg-btn">Virtual Background</button>
+            <input type="file" id="virtual-bg-input" accept="image/*" class="hidden">
+            <button id="record-btn">Start Recording</button>
+            <button id="raise-hand-btn">Raise Hand</button>
+            <button id="end-call-btn">End Call</button>
+        </div>
+
+        <div class="chat-section">
+            <h3>Chat</h3>
+            <div id="chat-box"></div>
+            <input type="text" id="chat-input" placeholder="Type a message...">
+            <button id="send-btn">Send</button>
+        </div>
+
+        <div class="participants">
+            <h3>Participants</h3>
+            <ul id="participant-list"></ul>
+        </div>
+    </div>
+    <script src="videocallpage.js"></script>
+</body>
+
+</html>

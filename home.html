@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Hello Rohini!</h1>
+      <div class="top-bar">
+        <input type="text" placeholder="Search..." />
+        <img src="profile.jpg" alt="Profile" class="profile-icon" />
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2 class="animated-text">Welcome to the Debate Platform</h2>
+        <p>Join us for live debates and discussions on various topics.</p>
+        <button class="cta-btn" onclick="goToDebatePage()">
+          Start a Debate
+        </button>
+      </div>
+      <div class="hero-image">
+        <img src="debate1.jpg" alt="Debate Image" width="100%" />
+      </div>
+    </section>
+
+    <script>
+      function goToDebatePage() {
+        window.location.href = "debate-platform.html";
+      }
+    </script>
+
+    <section class="more-info">
+      <h2>Why Join Us?</h2>
+      <p>
+        At Debate, we provide a space for intellectual discussions and
+        thought-provoking debates. Share your opinions, listen to others, and
+        grow with us.
+      </p>
+      <div class="info-grid">
+        <button class="info-item" onclick="goToPage('live-discussions')">
+          Live Discussions
+        </button>
+        <button class="info-item" onclick="goToPage('expert-opinions')">
+          Expert Opinions
+        </button>
+        <button class="info-item" onclick="goToPage('global community')">
+          Global Community
+        </button>
+        <button class="info-item" onclick="goToPage('realtime updates')">
+          Real-time Updates
+        </button>
+      </div>
+    </section>
+
+    <script>
+      function goToPage(page) {
+        window.location.href = page + ".html";
+      }
+    </script>
+
+    <section class="categories">
+      <h3>Choose a Category to Debate</h3>
+      <div class="category-card-container">
+        <div class="category-card">
+          <h4>Education</h4>
+          <p>
+            Debate about the future of education, teaching methods, and student
+            experience.
+          </p>
+          <button class="debate-btn" onclick="goToCategoryPage('education')">
+            Start Debate
+          </button>
+        </div>
+        <div class="category-card">
+          <h4>Social Media</h4>
+          <p>
+            Discuss the impact of social media on society, mental health, and
+            communication.
+          </p>
+          <button class="debate-btn" onclick="goToCategoryPage('social-media')">
+            Start Debate
+          </button>
+        </div>
+        <div class="category-card">
+          <h4>Marketing</h4>
+          <p>
+            Debate the role of marketing in business growth and ethical
+            marketing practices.
+          </p>
+          <button class="debate-btn" onclick="goToCategoryPage('marketing')">
+            Start Debate
+          </button>
+        </div>
+        <div class="category-card">
+          <h4>Reporter</h4>
+          <p>
+            Engage in debates on the role of journalism, fake news, and media
+            ethics.
+          </p>
+          <button class="debate-btn" onclick="goToCategoryPage('reporter')">
+            Start Debate
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function goToCategoryPage(category) {
+        window.location.href = category + ".html";
+      }
+    </script>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 Debate Platform. All rights reserved.</p>
+        <a href="feedback.html" class="feedback-link">Give Feedback</a>
+      </div>
+    </footer>
+    <script>
+      const footer = document.querySelector(".footer-container");
+      console.log(footer);
+    </script>
+  </body>
+</html>

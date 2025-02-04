@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Online Chat Application</title>
+    <link rel="stylesheet" href="onlinechatpage.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="chat-box" id="chatBox">
+            <div class="chat-message received" data-messageid="1">
+                <span class="message">Hello!</span>
+                <span class="timestamp">10:00 AM</span>
+                <button class="edit-btn" onclick="editMessage(this)">Edit</button>
+                <button class="delete-btn" onclick="deleteMessage(this)">Delete</button>
+            </div>
+            <div class="chat-message sent" data-messageid="2">
+                <span class="message">How are you!</span>
+                <span class="timestamp">10:01 AM</span>
+                <button class="edit-btn" onclick="editMessage(this)">Edit</button>
+                <button class="delete-btn" onclick="deleteMessage(this)">Delete</button>
+            </div>
+        </div>
+        <div class="input-box">
+            <input type="text" id="messageInput" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="onlinechatpage.js"></script>
+</body>
+
+</html>

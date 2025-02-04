@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Discussions</title>
+    <link rel="stylesheet" href="live-discussions.css">
+</head>
+
+<body>
+    <div id="usernameSection">
+        <input type="text" id="usernameInput" placeholder="Enter your username">
+        <button onclick="setUsername()">Set Username</button>
+    </div>
+
+    <header>
+        <h1>Live Discussions</h1>
+    </header>
+
+    <div class="main-container">
+        <aside class="topics-section">
+            <h2>Topics</h2>
+            <div class="topics">
+                <button class="topic-card">Politics</button>
+                <button class="topic-card">Science</button>
+                <button class="topic-card">Technology</button>
+                <button class="topic-card">Health</button>
+                <button class="topic-card">Education</button>
+
+                <button class="topic-card" onclick="showOtherTopicInput()">Other</button>
+            </div>
+            <div id="otherTopicSection" style="display: none;">
+                <input type="text" id="otherTopicInput" placeholder="Enter your topic">
+                <button onclick="addOtherTopic()">Add Topic</button>
+            </div>
+        </aside>
+
+        <section class="discussion-area">
+            <div id="timer" class="timer">Time Left: <span id="timeLeft">15:00</span></div>
+            <div id="message-container" class="message-container"></div>
+            <div id="typing-indicator"></div>
+
+            <div class="user-actions">
+                <input type="text" id="messageInput" placeholder="Type a message..." oninput="showTypingIndicator()">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+
+            <div class="reactions">
+                <span onclick="addReaction('👍')">👍</span>
+                <span onclick="addReaction('😂')">😂</span>
+                <span onclick="addReaction('👏')">👏</span>
+                <span onclick="addReaction('🎉')">🎉</span>
+            </div>
+        </section>
+    </div>
+
+    <script src="live-discussions.js"></script>
+</body>
+
+</html>

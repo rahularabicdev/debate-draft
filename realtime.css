@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f97c;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: hsla(0, 0%, 100%, 0.493);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #ddd;
+    background-color:  #9b060d;;
+}
+
+header h1 {
+    font-size: 2em;
+    color:black;
+}
+
+header p {
+    color: black
+}
+
+h2 {
+    color: #444;
+    margin-top: 20px;
+}
+
+section {
+    margin-top: 20px;
+}
+
+section p, section ul {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+.highlight {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #9b060d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+#chatDisplay {
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 150px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.transcript-content, .feed-content {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+#highlightList p {
+    margin: 5px 0;
+}
+
+canvas {
+    max-width: 100%;
+    height: 10%;
+    margin-top: 20px;
+}

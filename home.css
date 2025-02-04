@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #1e3c72, #2a5298, #5c6bc0, #8e44ad);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: whitesmoke;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: left;
+}
+
+.animated-text {
+    font-size: 50px;
+    font-weight: bold;
+    animation: fadeIn 3s ease-in-out infinite alternate;
+    color: #181C14;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: #007bff;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.more-info {
+    padding: 50px 20px;
+    background-color: #eee;
+    text-align: center;
+}
+
+.more-info h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.more-info p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    gap: 50px;
+    justify-content: center;
+}
+
+.info-item {
+    background-color: #28a745;
+    color: white;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+/* New Categories Section Styles */
+.categories {
+    padding: 50px 20px;
+    background-color: #f4f4f9;
+}
+
+.categories h3 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+.category-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Responsive grid */
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.category-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.category-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.debate-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.debate-btn:hover {
+    background-color: #0056b3;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);  /* Hover effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .category-card-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Adjust on small screens */
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container p {
+    margin: 0;
+}
+
+.feedback-link {
+    color: #28a745;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.feedback-link:hover {
+    text-decoration: underline;
+    color: #007bff;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Real-time Updates</title>
+    <link rel="stylesheet" href="realtime updates.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Real-time Debate Updates</h1>
+            <p>Stay engaged with live updates, polls, and discussions.</p>
+        </header>
+
+        <section class="live-feed">
+            <h2>Live Text Feed</h2>
+            <div class="feed-content">
+                <p><span class="highlight">Speaker A:</span> The importance of climate change can't be overstated. We
+                    must act now!</p>
+                <p><span class="highlight">Speaker B:</span> While that's true, the economic impact must also be
+                    considered.</p>
+            </div>
+        </section>
+
+        <section class="voting-poll">
+            <h2>Who do you think is winning?</h2>
+            <form>
+                <label><input type="radio" name="vote" value="Speaker A"> Speaker A</label><br>
+                <label><input type="radio" name="vote" value="Speaker B"> Speaker B</label><br><br>
+                <button type="button" onclick="submitVote()">Submit Vote</button>
+            </form>
+
+            <div class="poll-results">
+                <h2>Polling Results</h2>
+                <canvas id="pollChart" width="300" height="80"></canvas>
+            </div>
+        </section>
+
+        <section class="stats">
+            <h2>Live Statistics</h2>
+            <div class="stats-content">
+                <p><strong>Viewers Online:</strong> <span id="viewerCount">500</span></p>
+                <p><strong>Current Votes:</strong></p>
+                <ul>
+                    <li>Speaker A: <span id="votesA">250</span></li>
+                    <li>Speaker B: <span id="votesB">250</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="social-feed">
+            <h2>Social Media Feed</h2>
+            <div class="social-content" id="socialFeed">
+            </div>
+
+            <textarea id="newPost" placeholder="Post your comment..."></textarea>
+            <button onclick="postToFeed()">Post</button>
+        </section>
+
+        <section class="fact-check">
+            <h2>Live Fact-Check</h2>
+            <p><strong>Claim:</strong> Climate change is the biggest issue facing us today.</p>
+            <p><strong>Fact-Check:</strong> True. Scientific consensus supports this claim with overwhelming evidence.</p>
+        </section>
+
+        <section class="notifications">
+            <h2>Notifications</h2>
+            <p><strong>New Speaker Alert:</strong> Speaker B will now address the economic implications of climate change.</p>
+        </section>
+
+        <section class="timer">
+            <h2>Speaker Timer</h2>
+            <p>Speaker A has <span id="timeLeft">3:00</span> minutes remaining.</p>
+        </section>
+
+        <section class="highlights">
+            <h2>Highlight Reel</h2>
+            <img src="real_img.png" alt="Debate Highlights" height="20%" width="20%">
+        </section>
+
+        <section class="transcript">
+            <h2>Live Transcription</h2>
+            <div class="transcript-content">
+                <p><strong>Speaker A:</strong> We must prioritize sustainability...</p>
+                <p><strong>Speaker B:</strong> But the economic factors are also critical...</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="realtime updates.js"></script>
+</body>
+
+</html>

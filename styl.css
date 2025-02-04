@@ -1,0 +1,8 @@
+.newspaper {
+    column-count: 3;
+    column-gap: 20px; /* Adds space between columns */
+    padding: 10px; /* Adds padding inside the border */
+    box-shadow: 5px 5px 10px gray; /* Adds shadow effect */
+    border: 2px solid red; /* Sets border width, style, and color */
+    border-radius: 10px; /* Rounds the corners */
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Page</title>
+    <link rel="stylesheet" href="debate.css">
+</head>
+<body>
+    <section class="debate-page">
+        <h2>Welcome to Debate Page</h2>
+        <div class="debate-options">
+            <div class="option">
+                <h3>Online Chat</h3>
+                <!-- Corrected button tag -->
+                <button class="join" onclick="goToOnlineChatPage()">Join</button>
+                <p>Join People</p>
+            </div>
+            <div class="option">
+                <h3>Video Call</h3>
+                <button class="join" onclick="goToVideoCallPage()">Join</button>
+                <p>Join People</p>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        // Function to redirect to Online Chat page
+        function goToOnlineChatPage() {
+            window.location.href = 'onlinechatpage.html'; // Redirect to the Online Chat page
+        }
+
+        // Function to redirect to Video Call page
+        function goToVideoCallPage() {
+            window.location.href = 'videocallpage.html'; // Redirect to the Video Call page
+        }
+    </script>
+
+</body>
+</html>

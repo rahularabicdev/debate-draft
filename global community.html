@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Community - Debate</title>
+    <link rel="stylesheet" href="global community.css">
+</head>
+
+<body>
+    <div class="global-container">
+        <header>
+            <h1>🌍 Global Community - Debate</h1>
+            <p class="subheading">Join insightful debates and share your opinions with people from around the world!</p>
+            <button class="profile-btn">My Profile</button>
+            <button id="theme-toggle">Switch to Dark Mode</button>
+        </header>
+
+        <div class="profile-modal" id="profileModal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeBtn">&times;</span>
+                <h2>Profile Details</h2>
+                <form id="profileForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username">
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio" placeholder="Write something about yourself"></textarea>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+
+        <section class="discussion-section">
+            <div class="discussion-card">
+                <h2>🌱 Climate Change: What’s Next?</h2>
+                <p class="description">Join this global conversation on how we can tackle climate change effectively.
+                </p>
+                <button class="btn join-btn">Join Now</button>
+            </div>
+
+            <div class="discussion-card">
+                <h2>🤖 Future of Artificial Intelligence: Friend or Foe?</h2>
+                <p class="description">Is AI our greatest ally or will it replace us? Let’s discuss.</p>
+                <button class="btn join-btn">Join Now</button>
+            </div>
+
+            <div class="discussion-card">
+                <h2>📚 Education for All: A Global Movement</h2>
+                <p class="description">What does a truly accessible education system look like? Share your thoughts.</p>
+                <button class="btn join-btn">Join Now</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Debate Site | Global Community</p>
+        </footer>
+    </div>
+
+    <script src="global community.js"></script>
+</body>
+
+</html>

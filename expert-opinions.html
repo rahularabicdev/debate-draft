@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Opinions</title>
+    <link rel="stylesheet" href="expert-opinions.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Expert Opinions</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Filter by Topic</h2>
+            <ul>
+                <li><button onclick="filterContent('Politics')">Politics</button></li>
+                <li><button onclick="filterContent('Technology')">Technology</button></li>
+                <li><button onclick="filterContent('Health')">Health</button></li>
+                <li><button onclick="filterContent('Education')">Education</button></li>
+                <li><button onclick="filterContent('Science')">Science</button></li>
+            </ul>
+        </aside>
+
+        <section class="experts">
+            <h1>Meet Our Experts</h1>
+            <div class="expert-cards">
+                <div class="card" data-topic="Technology">
+                    <img src="Neha.jpeg" alt="Expert 1">
+                    <h3>Neha Vishwakarma</h3>
+                    <p>Technology Specialist</p>
+                    <button onclick="viewDetails('Neha Vishwakarma')">View Details</button>
+                    <button onclick="followExpert(this)">Follow Expert</button>
+                    <div class="expert-details" id="Neha Vishwakarma-details">
+                        <p>Neha is a seasoned technology expert with over 10 years of experience in AI and software
+                            development.</p>
+                    </div>
+                </div>
+                <div class="card" data-topic="Politics">
+                    <img src="Rohini_patil.jpg" alt="Expert 2">
+                    <h3>Rohini Patil</h3>
+                    <p>Political Analyst</p>
+                    <button onclick="viewDetails('Rohini Patil')">View Details</button>
+                    <button onclick="followExpert(this)">Follow Expert</button>
+                    <div class="expert-details" id="Rohini Patil-details">
+                        <p>Rohini is a respected political analyst, known for her deep insights into current global
+                            political trends.</p>
+                    </div>
+                </div>
+                <div class="card" data-topic="Health">
+                    <img src="jyoti.jpeg" alt="Expert 3">
+                    <h3>Jyoti Jaiswal</h3>
+                    <p>Health Researcher</p>
+                    <button onclick="viewDetails('Jyoti Jaiswal')">View Details</button>
+                    <button onclick="followExpert(this)">Follow Expert</button>
+                    <div class="expert-details" id="Jyoti Jaiswal-details">
+                        <p>Jyoti has made significant contributions in health research, focusing on mental health and
+                            wellness.</p>
+                    </div>
+                </div>
+                <div class="card" data-topic="Education">
+                    <img src="Umesh sir.jpeg" alt="Expert 4">
+                    <h3>Umesh Sir</h3>
+                    <p>Education Specialist</p>
+                    <button onclick="viewDetails('Umesh Sir')">View Details</button>
+                    <button onclick="followExpert(this)">Follow Expert</button>
+                    <div class="expert-details" id="Umesh Sir-details">
+                        <p>Umesh is a highly experienced educator with expertise in curriculum development and teaching
+                            strategies.</p>
+                    </div>
+                </div>
+                <div class="card" data-topic="Science">
+                    <img src="Vimal.jpeg" alt="Expert 5">
+                    <h3>Vimal Pal</h3>
+                    <p>Science Researcher</p>
+                    <button onclick="viewDetails('Vimal Pal')">View Details</button>
+                    <button onclick="followExpert(this)">Follow Expert</button>
+                    <div class="expert-details" id="Vimal Pal-details">
+                        <p>Vimal is a dedicated science researcher, specializing in environmental science and
+                            sustainability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tabs">
+            <div class="tab-buttons">
+                <button onclick="showTab('videos')">Videos</button>
+                <button onclick="showTab('articles')">Articles</button>
+                <button onclick="showTab('live')">Live Sessions</button>
+            </div>
+            <div class="tab-content" id="videos">
+                <h3>Videos</h3>
+                <p>Here you can find all expert video content.</p>
+                <ul>
+                    <li>Video 1: Understanding Technology</li>
+                    <li>Video 2: Health Insights</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="articles" style="display: none;">
+                <h3>Articles</h3>
+                <p>Read expert articles and blogs here.</p>
+                <ul>
+                    <li>Article 1: Politics in 2024</li>
+                    <li>Article 2: Advances in Education</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="live" style="display: none;">
+                <h3>Live Sessions</h3>
+                <p>Join live discussions and sessions.</p>
+                <ul>
+                    <li>Live Session 1: Future of Science</li>
+                    <li>Live Session 2: Career Talks</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="expert-opinions.js"></script>
+</body>
+
+</html>
